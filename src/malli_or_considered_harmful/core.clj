@@ -147,7 +147,7 @@
 ;; Send a request to `/dangerous-or`. We have a valid body and we'll change `:baz` to
 ;; make the payload invalid. Here, because we use a dangerous `:or`, we will get
 ;; a messy error message telling us that the entire contents of the `data` input
-;; were invalid. For most use caess, this is extremely unhelpful, because it
+;; were invalid. For most use cases, this is extremely unhelpful, because it
 ;; obscures the actual error (`:baz` alone was the problem).
 (-> (mock/request :post "/dangerous-or")
     (mock/json-body (assoc-in valid-request
