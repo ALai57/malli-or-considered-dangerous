@@ -1,4 +1,4 @@
-(ns malli-or-considered-harmful.core
+(ns use-malli-or-with-caution.core
   "Malli allows us to write specifications that define the shape of our data.
   It lets us express ideas like 'the field `foo` should be an integer'.
 
